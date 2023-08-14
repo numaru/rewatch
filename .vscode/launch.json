@@ -1,0 +1,77 @@
+{
+    "configurations": [
+        {
+            "name": "screen",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "build/screen/zephyr/zephyr.elf",
+            "targetArchitecture": "arm",
+            "MIMode": "gdb",
+            "stopAtEntry": false,
+            "miDebuggerPath": "gdb-multiarch",
+            "miDebuggerServerAddress": "localhost:3333",
+            "logging": {
+                // "trace": true,
+                // "traceResponse": true,
+                "engineLogging": true,
+            },
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "peripheral",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "build/peripheral/zephyr/zephyr.elf",
+            "targetArchitecture": "arm",
+            "MIMode": "gdb",
+            "stopAtEntry": false,
+            "miDebuggerPath": "gdb-multiarch",
+            "miDebuggerServerAddress": "localhost:3334",
+            "logging": {
+                // "trace": true,
+                // "traceResponse": true,
+                "engineLogging": true,
+            },
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "central",
+            "type": "cppdbg",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "program": "build/central/zephyr/zephyr.elf",
+            "targetArchitecture": "arm",
+            "MIMode": "gdb",
+            "stopAtEntry": false,
+            "miDebuggerPath": "gdb-multiarch",
+            "miDebuggerServerAddress": "localhost:3335",
+            "logging": {
+                // "trace": true,
+                // "traceResponse": true,
+                "engineLogging": true,
+            },
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+
+    ]
+}
